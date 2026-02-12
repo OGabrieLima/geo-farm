@@ -1,0 +1,81 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "biome": "tropical",
+        "name": "Bioma Tropical",
+        "color": "#10b981",
+        "bonus": ["Café", "Cana", "Cacau", "Banana"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80, 10],
+          [-35, 10],
+          [-35, -15],
+          [-80, -15],
+          [-80, 10]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "biome": "temperate",
+        "name": "Bioma Temperado",
+        "color": "#eab308",
+        "bonus": ["Trigo", "Uva", "Maçã", "Soja"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-75, -15],
+          [-35, -15],
+          [-35, -35],
+          [-75, -35],
+          [-75, -15]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "biome": "arid",
+        "name": "Bioma Árido",
+        "color": "#f97316",
+        "bonus": ["Uva", "Azeitona", "Frutas Secas"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-72, -25],
+          [-65, -25],
+          [-65, -35],
+          [-72, -35],
+          [-72, -25]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "biome": "cold",
+        "name": "Bioma Frio",
+        "color": "#60a5fa",
+        "bonus": ["Trigo de Inverno", "Madeira", "Quinoa"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-75, -35],
+          [-65, -35],
+          [-65, -56],
+          [-75, -56],
+          [-75, -35]
+        ]]
+      }
+    }
+  ]
+}

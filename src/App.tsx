@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Layout/Header";
 import Sidebar from "./components/Layout/Sidebar";
 import Index from "./pages/Index.tsx";
+import DashboardPage from "./pages/dashboard.tsx";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
             <main className="flex-1 ml-64 p-8">
               <Routes>
                 <Route path="/" element={<Index />} />
+                <Route path="/dashboard" element={<DashboardPage />} />
               </Routes>
             </main>
           </div>
