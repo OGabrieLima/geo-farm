@@ -4,8 +4,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Layout/Header";
 import Sidebar from "./components/Layout/Sidebar";
-import Index from "./pages/Index.tsx";
-import DashboardPage from "./pages/dashboard.tsx";
+import Dashboard from "./pages/Dashboard";
+import Map from "./pages/Map";
 
 const queryClient = new QueryClient();
 
@@ -18,10 +18,10 @@ const App = () => (
           <Header />
           <div className="flex">
             <Sidebar />
-            <main className="flex-1 ml-64 p-8">
+            <main className="flex-1 ml-64">
               <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/map" element={<Map />} />
               </Routes>
             </main>
           </div>
